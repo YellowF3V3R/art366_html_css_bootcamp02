@@ -1,0 +1,42 @@
+/* 
+Base Rules
+	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
+*/
+
+html {
+    animation: colorchange-background 5s linear 1s infinite alternate;
+    background-color: $background-color;
+}
+
+body {
+    color: $font-color;
+    box-sizing: border-box;
+    @include body-font-regular;
+    @include fontSize(27px);
+    //padding: 0 8px;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1, h2 {
+    @include headline-font;
+}
+
+h1 {
+    @include fontSize (100px);
+}
+
+p {
+    @include fontSize (15px);
+}
+
+html {
+background:url('https://thegodguy.files.wordpress.com/2010/09/rainbow.jpg') pink
+no-repeat right top;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+    background-attachment: fixed
+   
+}
